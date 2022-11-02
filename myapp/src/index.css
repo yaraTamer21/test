@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Edu+QLD+Beginner:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&family=Lobster&family=Meddon&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,300;0,400;0,500;1,300;1,500&family=Passions+Conflict&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Edu+QLD+Beginner:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&family=Lobster&family=Meddon&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,300;0,400;0,500;1,300;1,500&family=Passions+Conflict&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
   direction: rtl;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
 
   
 }
@@ -21,16 +21,19 @@ body{
   color: #fff !important;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  text-transform: uppercase;
-  color: #dab44b !important;
-  font-family: 'Poppins', sans-serif;
+.navbar-light .navbar-nav .nav-link , nav .active , nav a{
+  text-transform: uppercase !important;
+  color: #dab44b ;
   font-weight: 600 !important;
-  font-size: 20px;
+  font-size: 20px !important;
+  text-decoration:  none !important;
 
   margin: 0 15px;
 }
 
+/* nav a:hover{
+  color: #bababc ;
+} */
 
 
 
@@ -38,6 +41,11 @@ body{
 .navbar-light .navbar-nav .nav-link:hover {
   color: #bababc !important;
 }
+
+/* .nav-link:active{
+
+} */
+
 .navbar-light .navbar-nav .nav-link.active {
   color: #dab44b !important;
 }
@@ -49,18 +57,24 @@ body{
   overflow: hidden;
 }
 .dropdown-item {
-  color: balck !important;
-  font-family: 'Edu QLD Beginner', cursive;
   /* font-weight: bolder; */
+  background-color: white !important;
   font-weight: 600 !important;
+  color: rgb(61, 58, 58) !important;
   text-align: start !important;
   font-size: 18px;
   
   padding: 5px 25px;
 }
+
+/* nav ul li {
+  margin: auto !important;
+} */
 .dropdown-item:focus,
-.dropdown-item:hover {
+.dropdown-item:hover
+ {
   text-decoration: none;
+  width: 100%;
   background-color: #cb9e33 !important;
   color: white !important;
   transform: translateX(5px);
@@ -311,7 +325,10 @@ background-color: transparent
 
    letter-spacing: 2px;
  }
-
+.about1-header a{
+  color: black !important;
+  text-decoration: none !important;
+}
 
 
 /* button in about */
@@ -558,6 +575,10 @@ transition: all 0.6s;
     display:inline;
     width: 15%;
   }
+  .mission{
+    height: 708px !important;
+  }
+ 
     .image-navbar-reponsive{
     width: 100%;
   }
@@ -604,9 +625,13 @@ transition: all 0.6s;
 
 /* small */
 @media (max-width:768px) and (min-width:576px) {
+
   .navbar-brand{
     display:inline;
     width: 18%;
+  }
+  .mission{
+    height: 708px !important;
   }
     .image-navbar-reponsive{
     width: 100%;
@@ -662,6 +687,10 @@ transition: all 0.6s;
 
 /* extra small */
  @media (max-width:576px) {
+ 
+  .mission{
+    height: 708px !important; 
+  }
   .slick-slide img {
     display: block;
     height: 287px ;
@@ -956,3 +985,75 @@ footer span {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* loading page */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.loading{
+  direction: ltr;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cb9e33;
+}
+.back {
+  margin: 1em auto;
+  font-family: "Roboto";
+}
+.back span {
+  font-size: 3em;
+  color: #f2c640;
+  background: #262b37;
+  display: table-cell;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 5px 0 #ccc;
+  padding: 0 15px;
+  line-height: 100px;
+  animation: jumb 2s infinite;
+}
+@keyframes jumb {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+    box-shadow: 0 15px 0 rgb(242, 198, 64);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.back span:nth-child(1) {
+  animation-delay: 0s;
+}
+.back span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.back span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.back span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.back span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.back span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.back span:nth-child(7) {
+  animation-delay: 0.6s;
+}

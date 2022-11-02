@@ -10,35 +10,35 @@ const Header = () => {
      <>
 
       <div className="parent">
-      <div class="container container-parent">
+      <div className="container container-parent">
  
 
 {/* tabbar */}
-<div class="headerwp clearfix">
-		<div class="container min-nav">
-			<div class="row align-items-center ">
-				<div class="col-lg-4 number-tapbar col-md-6 col-12 col-sm-4">
-					<div class="loc-heder">
+<div className="headerwp clearfix">
+		<div className="container min-nav">
+			<div className="row align-items-center ">
+				<div className="col-lg-4 number-tapbar col-md-6 col-12 col-sm-4">
+					<div className="loc-heder">
 						<p>
-							<i class="fas fa-mobile-alt"></i>
+							<i className="fas fa-mobile-alt"></i>
 						 <span className='fw-bolder'>
                          966565821156+
                             </span>					</p>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-6 col-sm-4">
-					<div class="desktoplogo clearfix">
+				<div className="col-lg-4 col-md-6 col-6 col-sm-4">
+					<div className="desktoplogo clearfix">
 						<NavLink to="/"><img src="./images/WhatsApp_Image_2022-10-30_at_12.35.47_AM-removebg-preview.png"  alt=""/></NavLink>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-6 col-sm-4">
-					<div class="social-media">
+				<div className="col-lg-4 col-md-6 col-6 col-sm-4">
+					<div className="social-media">
 						<ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i> </a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i> </a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i> </a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i> </a></li>
-							<li><a href="#"><i class="fas fa-language"></i> </a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100087437136721" target='_blanck'><i className="fab fa-facebook-f"></i> </a></li>
+							<li><a href="https://twitter.com/home" target='_blanck'><i className="fab fa-twitter"></i> </a></li>
+							<li><NavLink to="#"><i className="fab fa-youtube"></i> </NavLink></li>
+							<li><NavLink to="#"><i className="fab fa-instagram"></i> </NavLink></li>
+							<li><NavLink to="#"><i className="fas fa-language"></i> </NavLink></li>
 						</ul>
 					</div>
 				</div>
@@ -51,56 +51,56 @@ const Header = () => {
  {/* navbar */}
 
 <div className="navbars">
-<div class="top-navbar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="./images/WhatsApp_Image_2022-10-30_at_12.35.47_AM-removebg-preview.png" className='image-navbar-reponsive'  alt=""/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<div className="top-navbar">
+    <nav className="navbar navbar-expand-lg navbar-light">
+      <div className="container">
+        <NavLink className="navbar-brand" to="#"><img src="./images/WhatsApp_Image_2022-10-30_at_12.35.47_AM-removebg-preview.png" className='image-navbar-reponsive'  alt=""/></NavLink>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ml-auto">
 
-          <li class="nav-item">
-              <NavLink class="nav-link links-header" to="/"><i class="fa-solid fa-house ms-2"></i>الرئيسيه</NavLink>
+          <li className="nav-item">
+              <NavLink className="nav-link links-header" to="/"><i className="fa-solid fa-house ms-2"></i>الرئيسيه</NavLink>
             </li>
-            <li class="nav-item">
-              <NavLink class="nav-link links-header" to="/about"><i class="fa-regular fa-address-book ps-2"></i>عملائنا</NavLink>
+            <li className="nav-item">
+              <NavLink className="nav-link links-header" to="/about"><i className="fa-regular fa-address-book ps-2"></i>من نحن</NavLink>
             </li>
 
 
 
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa-solid fa-bars"></i>    الخدمات
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">الخدمه الاولي</a>
-                <a class="dropdown-item" href="#">الخدمه التانيه</a>
-                <a class="dropdown-item" href="#"> الخدمه التالته</a>
-                <a class="dropdown-item" href="#"> الخدمه الربعه </a>
-                <a class="dropdown-item" href="#"> الخدمه الخامسه</a>
+            <li className="nav-item dropdown">
+              <NavLink className="nav-link dropdown-toggle active" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i className="fa-solid fa-bars"></i>    الخدمات
+              </NavLink>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <NavLink className="dropdown-item" to="#">الخدمه الاولي</NavLink>
+                <NavLink className="dropdown-item" to="#">الخدمه التانيه</NavLink>
+                <NavLink className="dropdown-item" to="#"> الخدمه التالته</NavLink>
+                <NavLink className="dropdown-item" to="#"> الخدمه الربعه </NavLink>
+                <NavLink className="dropdown-item" to="#"> الخدمه الخامسه</NavLink>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-regular fa-address-book ps-2"></i>عملائنا</a>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="#"><i className="fa-regular fa-address-book ps-2"></i>عملائنا</NavLink>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa-solid fa-bars"></i>    اعمالنا
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#"> العمل الاول</a>
-                <a class="dropdown-item" href="#"> العمل  التاني </a>
-                <a class="dropdown-item" href="#">العمل  التالت </a>
-                <a class="dropdown-item" href="#">العمل  الرابع </a>
+            <li className="nav-item dropdown">
+              <NavLink className="nav-link dropdown-toggle active" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i className="fa-solid fa-bars"></i>    اعمالنا
+              </NavLink>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <NavLink className="dropdown-item" to="#"> العمل الاول</NavLink>
+                <NavLink className="dropdown-item" to="#"> العمل  التاني </NavLink>
+                <NavLink className="dropdown-item" to="#">العمل  التالت </NavLink>
+                <NavLink className="dropdown-item" to="#">العمل  الرابع </NavLink>
               </ul>
             </li>
             
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-brands fa-telegram ms-2"></i>التواصل معنا</a>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="#"><i className="fa-brands fa-telegram ms-2"></i>التواصل معنا</NavLink>
             </li>
            
           </ul>

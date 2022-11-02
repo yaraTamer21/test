@@ -1,6 +1,7 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
 	// aos for animation with scroll
 	AOS.init({
@@ -24,8 +25,8 @@ const Footer = () => {
 
 									</p>
 									<ul>
-										<li><a href="#"><i class="fab fa-facebook-f"></i> </a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+										<li><a href="https://www.facebook.com/profile.php?id=100087437136721" target='_blanck'><i class="fab fa-facebook-f"></i> </a></li>
+										<li><a href="https://twitter.com/home"  target='_blanck'><i class="fab fa-twitter"></i> </a></li>
 										<li><a href="#"><i class="fab fa-youtube"></i> </a></li>
 										<li><a href="#"><i class="fab fa-instagram"></i> </a></li>
 									</ul>
@@ -36,8 +37,8 @@ const Footer = () => {
 							<div class="box-link-web">
 								<h3> روابط سريعة</h3>
 								<ul>
-									<li><a href="#"> الرئيسيه</a></li>
-									<li><a href="#"> من نحن</a></li>
+									<li><NavLink to="/"> الرئيسيه</NavLink></li>
+									<li><NavLink to="/about"> من نحن</NavLink></li>
 									<li><a href="#"> عملائنا </a></li>
 									<li><a href="#"> تواصل معنا</a></li>
 								</ul>

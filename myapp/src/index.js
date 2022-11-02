@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React ,{Suspense}from 'react';import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Loading from './Pages/Loading';
+const App=React.lazy(()=>import("./App"))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+     <Suspense fallback={<Loading/>}>
     <App />
+    </Suspense>
   </React.StrictMode>
 );
 

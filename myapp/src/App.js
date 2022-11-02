@@ -15,10 +15,10 @@ function App() {
    <Route exact path='/about'><Abouts/></Route>
 
     </Switch>
-    {/* <Abouts/> */}
+    <Footer/>
+
     </BrowserRouter>
 
-    <Footer/>
     </>
   );
 }
