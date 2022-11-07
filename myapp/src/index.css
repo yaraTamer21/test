@@ -413,7 +413,19 @@ background-color: transparent
 
 .services img{
   width:200px !important;
-  height: 140px ;
+  height: 200px ;
+  transition: all 0.4s;
+}
+.services .images 
+{
+  scale: 1.03;
+  box-shadow: 0px 0px 50px #cb9e33;
+  border: 4px solid #cb9e33
+}
+.services img:hover{
+  scale: 1.03;
+  box-shadow: 0px 0px 50px #cb9e33;
+  border: 4px solid #cb9e33;
 }
 .icons-services{
   text-align: center;
@@ -426,7 +438,6 @@ background-color: transparent
 .icons-services:hover{
   transform: rotate(2deg);
   
-  border:4px solid #cb9e33 ;
 
 
   color:white
