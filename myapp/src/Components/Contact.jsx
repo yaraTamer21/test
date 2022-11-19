@@ -54,7 +54,7 @@ const Contact = () => {
 
                 <div className=" mt-lg-0 mt-md-0 mt-4 col-md-6 text-center">
                     <div className="items">
-                       <img  data-aos="zoom-in" src='./images/contact-us-showcase.png' className="w-75"/>
+                       <img  data-aos="zoom-in" src='/images/contact-us-showcase.png' className="w-75"/>
                       
                     </div>
                 </div>

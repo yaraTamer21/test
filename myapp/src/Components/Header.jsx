@@ -62,7 +62,7 @@ const Header = () => {
           <ul className="navbar-nav ml-auto">
 
           <li className="nav-item">
-              <NavLink className="nav-link links-header" to="/"><i className="fa-solid fa-house ms-2"></i>الرئيسيه</NavLink>
+              <NavLink className="nav-link links-header" to="/"><i className="fa-solid fa-house ms-2"></i>الرئيسية</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link links-header" to="/about"><i className="fa-regular fa-address-book ps-2"></i>من نحن</NavLink>
@@ -71,17 +71,17 @@ const Header = () => {
 
 
 
-            <li className="nav-item dropdown">
-              <NavLink className="nav-link dropdown-toggle active" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li className="nav-item">
+              <NavLink  className="nav-link" to="/services" >
               <i className="fa-solid fa-bars"></i>    الخدمات
               </NavLink>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <NavLink className="dropdown-item" to="#">الخدمه الاولي</NavLink>
                 <NavLink className="dropdown-item" to="#">الخدمه التانيه</NavLink>
                 <NavLink className="dropdown-item" to="#"> الخدمه التالته</NavLink>
                 <NavLink className="dropdown-item" to="#"> الخدمه الربعه </NavLink>
                 <NavLink className="dropdown-item" to="#"> الخدمه الخامسه</NavLink>
-              </ul>
+              </ul> */}
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="#"><i className="fa-regular fa-address-book ps-2"></i>عملائنا</NavLink>
@@ -100,7 +100,7 @@ const Header = () => {
             </li>
             
             <li className="nav-item">
-              <NavLink className="nav-link" to="#"><i className="fa-brands fa-telegram ms-2"></i>التواصل معنا</NavLink>
+              <NavLink className="nav-link" to="/contact"><i className="fa-brands fa-telegram ms-2"></i>التواصل معنا</NavLink>
             </li>
            
           </ul>

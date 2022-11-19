@@ -5,11 +5,14 @@ body{
 
   
 }
+
 .parent{
   background-color: black;
 }
 
-
+a{
+  text-decoration: none !important;
+}
 /* nanbar */
 /* --------- START NAVBAR CSS -------- */
 .top-navbar {
@@ -777,7 +780,14 @@ transition: all 0.6s;
   
   }
   
-  
+
+  /* services details */
+  .services a  {
+    color: black  !important;
+  }
+  .servicedetails img{
+    height: 300px ;
+  }
  
 /* misson section */
 

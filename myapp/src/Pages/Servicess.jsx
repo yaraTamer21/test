@@ -1,10 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
-const HeaderAbout = () => {
+import Contact from '../Components/Contact'
+import Goals from '../Components/Goals'
+import Mission from '../Components/Mission'
+import Services from '../Components/Services'
+const Servicess = () => {
   return (
     <>
-    <div>
+      <div className="services_page">
+            {/* header in services */}
+            <div>
       <div className="about1-header">
           <div className="container">
             <div className='d-flex parent-header-about1 pt-3 align-items-center justify-content-center text-dark'>
@@ -12,7 +17,7 @@ const HeaderAbout = () => {
               <NavLink to='/'>الرئيسية</NavLink>
             </h2>
             <h2>/</h2>
-            <h3 className='fw-bolder text-white' >من نحن</h3>
+            <h3 className='fw-bolder text-white' >الخدمات</h3>
           
 
             </div>
@@ -22,9 +27,16 @@ const HeaderAbout = () => {
       </div>
 
     
+      </div>   
+
+        <Services/>
+        <Goals/>
+        <Mission/>
+
+        <Contact/>
       </div>
     </>
   )
 }
 
-export default HeaderAbout
+export default Servicess

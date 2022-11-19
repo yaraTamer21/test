@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AOS from 'aos';
 import { Data } from '../Data';
 import 'aos/dist/aos.css';
+import { NavLink } from 'react-router-dom';
 
 const Services = () => {
   const [data, setData] = useState([]);
@@ -49,7 +50,7 @@ const [check2,setCheck2]=useState(false)
             <h2 className=' fw-bolder  pe-3 pe-lg-0 '>الخدمات</h2>
                  
                  <div className="all-services">
-                   <div className="row align-items-center justify-content-center">
+                   <div className="row w-100 align-items-center justify-content-center">
                     {/* first services */}
                     <div className="col-md-4 mt-lg-0 mt-4">
                       <div className="items text-center">
@@ -85,12 +86,15 @@ const [check2,setCheck2]=useState(false)
                    {data.length>0&& data.map((i,index)=><>
         <div   data-aos="fade-up"
      data-aos-duration="3000" key={index} className="mt-3 col-lg-3 col-md-4 parent-servise mb-5">
-               <div className="items text-center">
+              <NavLink to={`servicesdetails/${i.id}`}>
+
+              <div className="items text-center">
                    <div className="icons-services m-auto mb-3">
                     <img  src={i.imgUrl} className='w-100'/>
                    </div>
                    <h3 className='h5'>{i.title}</h3>
                </div>
+              </NavLink>
            </div>
       </>)}
      
